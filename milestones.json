@@ -1,0 +1,114 @@
+{
+    "milestones": [
+      {
+        "date": "20 de septiembre (viernes)",
+        "title": "Javier Bardem y el Premio Donostia que se le debe",
+        "description": "La carrera de Javier Bardem ha ido en paralelo a su presencia en el Zinemaldia. El año pasado tuvo que haber recogido el Premio Donostia, no obstante, no pudo hacerlo por <a href='https://www.noticiasdegipuzkoa.eus/cultura/2023/09/16/rebordinos-bardem-dicho-firmar-contrato-7265510.html'>problemas de agenda</a>. Este año sí lo hará. Bardem recogerá el galardón honorífico a toda su carrera, que se ha desarrollado tanto en el Estado como en Hollywood, en la gala inaugural del 72º Zinemaldia. El intérprete es un actor que debe mucho a este certamen, no en vano, en 1994, sólo cuatro años después de haber iniciado su carrera actoral como profesional, logró la Concha de Plata a Mejor Interpretación por partida doble, por su papel del politoxicómano Lisandro en <i>Días contados</i>, de Imanol Uribe, y su trabajo en <i>El detective y la muerte</i>, de Carlos Suárez. Su mujer, Penélope Cruz, también tiene un Premio Donostia y al igual que ella, Bardem también fue cartel de la Sección Oficial del Zinemaldia." ,
+        "imageSrc": "/src/assets/images/javier_bardem.webp",
+        "altText": "Javier Bardem",
+        "position": "left",
+        "additionalImageSrc": "/src/assets/images/bardem_concha_de_plata_1994.jpg",
+        "trailerUrl": null
+      },
+      {
+        "date": "21 de septiembre (sábado)",
+        "title": "Cate Blanchett, la primera estrella de Hollywood",
+        "description": "Cate Blanchett pisará la alfombra roja del Kursaal para recibir su Premio Donostia, el primero que corresponderá a 2024. Su rostro es, además, la imagen principal de este Zinemaldia. Esta actriz australiana ha hecho carrera en Hollywood trabajando con cineastas de renombre como Martin Scorsese, David Fincher, Steven Spielberg, Peter Jackson y Woody Allen. Precisamente, por su papel de <i>Blue Jasmine</i>, dirigida por el cómico neoyorquino, obtuvo su primer Óscar. Además de recibir el Donostia, Blanchett presentará en Donostia la sátira política <i>Rumours</i>. Con el de Blanchett serán ya tres los miembros del elenco de <i>El Señor de los Anillos</i> que han recibido el Donostia. Los otros son Ian McKellen (2009) y Viggo Mortensen (2020).",
+        "imageSrc": "/src/assets/images/cateblanchett.avif",
+        "altText": "Cate Blanchett",
+        "position": "right",
+        "additionalImageSrc": "/src/assets/images/cartel-cate-blanchett.jpeg",
+        "trailerUrl": null 
+      },
+      {
+        "date": "22 de septiembre (domingo)",
+        "title": "Lupita Nyong'o o alma de un robot",
+        "description": "Ganadora de un Óscar por <i>Doce años de esclavitud</i>, Lupita Nyong'o presentará en Donostia <i>The wild robot</i>, una cinta de animación dirigida por Chris Sanders.",
+        "imageSrc": "/src/assets/images/lupita.webp",
+        "altText": "Lupita Nyong'o",
+        "position": "left",
+        "additionalImageSrc": null,
+        "trailerUrl": "https://www.youtube.com/embed/67vbA5ZJdKQ"
+      },
+      {
+        "date": "23 de septiembre (lunes)",
+        "title": "Franco Nero, un icono italiano",
+        "description": "Icono del spaghetti western, el giallo y el poliziottesco, el actor, productor y director italiano <b>Franco Nero</b> visitará el Zinemaldia como testigo viviente de una de las retrospectivas que acoge la sección Klasikoak. A Nero se le ha invitado a participar en el ciclo bautizado como <a href='https://www.noticiasdegipuzkoa.eus/cultura/2024/08/09/zinemaldia-retrospectiva-policiaco-italia-8572832.html'><i>Italia Violenta. El cine policiaco italiano</i></a>. Concretamente, presentará <i>Il giorno de lla civetta</i>, de Damiano Damiani.",
+        "imageSrc": "/src/assets/images/franco-nero.jpeg",
+        "altText": "Franco Nero",
+        "position": "right",
+        "additionalImageSrc": "/src/assets/images/italia_violenta.jpg",
+        "trailerUrl": null
+      },
+      {
+        "date": "24 de septiembre (martes)",
+        "title": "El 'amigo' Johnny Depp",
+        "description": "A <b>Johnny Depp</b> se le puede considerar ya un buen amigo del Festival. En 2020 participó en la Sección Oficial como productor de <a href='https://www.noticiasdegipuzkoa.eus/cultura/2020/09/21/hombre-salvo-musica-irlandesa-3748387.html'><i>Crock of Gold</i></a>, documental sobre la figura de Shane MacGowan, vocalista de The Pogues. Al año siguiente, y en pleno litigio con su ex Amber Heard por acusaciones cruzadas por difamación, <b>recibió el Premio Donostia</b>. Este año, por su parte, volverá a la Sección Oficial pero fuera de concurso para presentar <b>su segundo trabajo como director</b>, <i>Modi</i>, centrado en los últimos días del artista Amedeo Modigliani.",
+        "imageSrc": "/src/assets/images/johnny_depp.jpg",
+        "altText": "Johnny Depp",
+        "position": "left",
+        "additionalImageSrc": "/src/assets/images/extra_image.jpg",
+        "trailerUrl": null
+      },
+      {
+        "date": "25 de septiembre (miércoles)",
+        "title": "Costa-Gavras reflexiona sobre la muerte",
+        "description": "Al igual que Johnny Depp, el griego <b>Costa-Gavras</b> también ha recibido el <a href='https://www.noticiasdegipuzkoa.eus/cultura/2019/08/20/costa-gavras-premio-donostia-cine-3828000.html'><b>Premio Donostia</b></a>. Fue en 2019 la última vez que se le vio pisando la alfombra roja del Zinemaldia. En esta ocasión viene a competir por la Concha de Oro con <i>Le dernier souffle</i>, un diálogo filosófico sobre el fin de la vida.",
+        "imageSrc": "/src/assets/images/costa-gavras.jpeg",
+        "altText": "Costa-Gavras",
+        "position": "right",
+        "additionalImageSrc": null,
+        "trailerUrl": null
+      },
+      {
+        "date": "26 de septiembre (jueves)",
+        "title": "Pedro Almodóvar, otro Premio Donostia",
+        "description": "Parece extraño que <b>Pedro Almodóvar</b> no tuviese ya el Premio Donostia, pero nunca es tarde. La ocasión, además, parece de lo más propicia. No en vano, Almodóvar llegará de Venecia con un <a href='https://www.noticiasdegipuzkoa.eus/cine-y-series/2024/09/07/pedro-almodovar-leon-oro-festival-venecia-8663990.html'>León de Oro bajo el brazo</a>, obtenido por la película que se proyectará tras la gala, <i>La habitación de al lado</i>, su primer largometraje en inglés. El cineasta machego tiene una larga relación con el Festival, de hecho, en 1980 presentó <i>Pepi, Luci y Bom y otras chicas del montón</i>.",
+        "imageSrc": "/src/assets/images/pedro_almodovar.jpeg",
+        "altText": "Pedro Almodóvar",
+        "position": "left",
+        "additionalImageSrc": "/src/assets/images/pedro_almodovar_1980.jpeg",
+        "trailerUrl": null
+      },
+      {
+        "date": "26 de septiembre (jueves)",
+        "title": "Tilda Swinton por partida doble (o casi)",
+        "description": "La camaleónica actriz británica <b>Tilda Swinton</b> hará doblete este festival en lo que a películas se refiere. Es parte del elenco de <i>The end</i>, película musical con la que el oscarizado Joshua Oppenheimer compite por la Concha de Oro. No obstante, debido a problemas de agenda, no se encontrará en Donostia hasta el jueves 26. Ahí sí, acompañará a Pedro Almodóvar, como coprotagonista junto a Juliane Moore de 'En la habitación de al lado'. La intérprete será la encargada de entregar el Premio Donostia a Almodóvar.",
+        "imageSrc": "/src/assets/images/tilda_swinton.jpeg",
+        "altText": "Tilda Swinton",
+        "position": "right",
+        "additionalImageSrc": null,
+        "trailerUrl": "https://www.youtube.com//embed/-vXjU4auNEo"
+      },
+      {
+        "date": "26 de septiembre (jueves)",
+        "title": "Mónica Bellucci canta a María Callas",
+        "description": "Mónica Bellucci, actriz italiana que en 2018 recibió el Premio Donostia, también vuelve a la alfombra roja. Presentará en el Victoria Eugenia, dentro de la sección Perlak, <i>Maria Callas: Letters and memoirs</i>, un relato especular a medio camino entre el documental y la ficción en el que Bellucci se sumerge en los recuerdos epistolares de la cantante..",
+        "imageSrc": "/src/assets/images/monica_bellucci.jpg",
+        "altText": "Mónica Bellucci",
+        "position": "left",
+        "additionalImageSrc": null,
+        "trailerUrl": "https://www.youtube.com//embed/-qq8o5ffih4"
+      },
+      {
+        "date": "27 de septiembre (viernes)",
+        "title": "Pamela Anderson, en el papel de su vida",
+        "description": "<b>Pamela Anderson</b> es, sin duda, uno de los reclamos de la 72ª edición. La actriz, recordada por su papel en <i>Los vigilantes de la playa</i>, llegará al Zinemaldia en un registro inesperado, seguro, para gran parte del público. De la mano de Gia Coppola, nieta de Francis Ford Coppolla, Anderson interpreta a una streaper venida a menos en <i>The last showgirl</i>, que opta a la Concha de Oro. Los que la han visto aseguran que su interpretación es magistral y que tiene sendas posibilidades de hacerse con la <b>Concha de Plata a Mejor Interpretación</b>",
+        "imageSrc": "/src/assets/images/pamela_anderson.jpeg",
+        "altText": "Pamela Anderson",
+        "position": "right",
+        "additionalImageSrc": null,
+        "trailerUrl": null
+      },
+      {
+        "date": "28 de septiembre (sábado)",
+        "title": "Andrew Garfield, despedir el glamur por todo lo alto",
+        "description": "El Zinemaldia se clausurará por todo lo alto con la presencia de <b>Andrew Garfield</b>. Conocido entre el público por encarnar al segundo Spiderman cinematográfico, Garfield clausurará la Sección Oficial con el drama comercial <i>We live in time</i>, que según el director del Zinemaldia, José Luis Rebordinos, <a href='https://www.noticiasdegipuzkoa.eus/cultura/2024/09/15/jose-luis-rebordinos-zinemaldia-grande-8688607.html'>encantará al público donostiarra</a>.",
+        "imageSrc": "/src/assets/images/andrew_garfield.webp",
+        "altText": "Andrew Garfield",
+        "position": "left",
+        "additionalImageSrc": null,
+        "trailerUrl": "https://www.youtube.com//embed/bS0Clau5700"
+      }
+    ]
+  }
