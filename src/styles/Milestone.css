@@ -1,0 +1,155 @@
+.milestone {
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  will-change: opacity, transform;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Textos alineados a la izquierda y derecha */
+.milestone.left, .milestone.right {
+  text-align: left;
+}
+
+.milestone-content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  max-width: 45%;
+  box-sizing: border-box;
+}
+
+.milestone img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.milestone-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.milestone-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.milestone-content p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+/* Estrella de ocho puntas visible con cada milestone */
+.milestone::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('../assets/images/ochopuntasestrella.svg') no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Personalización de la estrella grande en la línea de tiempo */
+.milestone-star {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;  /* Tamaño de la imagen */
+  height: 200px;
+  margin: 0 20px;
+  border-radius: 50%; /* Mantiene el contorno circular */
+  transition: transform 0.3s ease-in-out;
+}
+
+.milestone-star::before {
+  content: '';
+  position: absolute;
+  width: 70%;  /* Ajustamos el resplandor para que sea solo un poco más grande que la imagen */
+  height: 70%;
+  border-radius: 50%;  /* Mantiene el resplandor en forma circular */
+  background: rgba(255, 255, 255, 0.1); /* Resplandor muy suave */
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3); /* Reducción de la intensidad del resplandor */
+  z-index: 0; /* Detrás de la imagen */
+}
+
+.milestone-star img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Imagen circular */
+  position: relative;
+  z-index: 1; /* La imagen está encima del resplandor */
+}
+
+.milestone-star:hover {
+  transform: scale(1.05); /* Zoom sutil al hacer hover */
+  box-shadow: none; /* Evita que se agregue otra sombra en hover */
+}
+
+.milestone-star::before:hover {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5); /* Efecto de brillo más fuerte al hacer hover */
+}
+
+/* Para dispositivos más grandes */
+@media (min-width: 768px) {
+  .milestone {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .milestone.left {
+    flex-direction: row-reverse;
+  }
+
+  .milestone.right {
+    align-items: flex-start;
+  }
+
+  .milestone img {
+    max-width: 200px; /* Ajusta el tamaño de la estrella en escritorio */
+    height: auto;
+  }
+
+  .milestone-content {
+    max-width: 45%;
+  }
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+  .milestone {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .milestone-content {
+    max-width: 100%;
+    padding-top: 80px; /* Ajuste para que el texto esté alineado debajo de la estrella */
+  }
+
+  .milestone-star {
+    margin-bottom: -60px; /* Hace que la estrella sobresalga del texto en móviles */
+  }
+
+  .milestone img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+}

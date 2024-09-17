@@ -1,0 +1,234 @@
+.timeline-section {
+  padding: 50px 0;
+  min-height: 100vh;
+  position: relative;
+}
+.night-sky-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, #001a4d 50%, #001f5e 100%);
+  z-index: 0;
+  /* Degradado de negro a azul oscuro */
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background-color: white;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  height: 0; /* Inicia en 0, para animar la altura */
+  z-index: 1;
+}
+
+.milestone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 40px 0;
+  padding: 0;
+  position: relative;
+  opacity: 0; /* Ocultar inicialmente */
+  transform: translateY(50px); /* Posición inicial para la animación */
+  will-change: opacity, transform; /* Optimización de rendimiento */
+}
+
+/* Añadir estilos para el contenido adicional */
+.milestone-additional-content {
+  opacity: 0; /* Ocultar inicialmente */
+  transform: scale(0.9); /* Pequeño efecto de zoom */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.milestone-additional-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Al hacer hover sobre la imagen adicional */
+.milestone-additional-content img:hover {
+  transform: scale(1.05);
+}
+
+/* Para mostrar el contenido adicional al hacer scroll */
+.milestone-content.visible .milestone-additional-content {
+  opacity: 1; /* Aparece gradualmente */
+  transform: scale(1); /* Retorna a su tamaño completo */
+}
+.milestone-additional-content img,
+.milestone-additional-content iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Flex para alternar posición */
+.milestone.left, .milestone.right {
+  text-align: left;
+}
+
+.milestone:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.milestone:nth-child(odd) {
+  flex-direction: row;
+}
+
+.milestone-image {
+  flex: 0 0 40%; /* Ocupa el 40% del ancho del contenedor */
+  max-width: 550px;
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
+}
+
+.milestone-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.milestone-image img:hover {
+  transform: scale(1.05);
+}
+
+.milestone-content {
+  flex: 0 0 50%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.milestone-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.milestone-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.milestone-content .milestone-date {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bolder;
+  color: rgb(255, 109, 109);
+}
+
+/* Ajustar margen para acercar las imágenes a la línea de tiempo */
+.milestone:nth-child(odd) .milestone-image {
+  transform: translateX(30%);
+}
+
+.milestone:nth-child(even) .milestone-image {
+  transform: translateX(-15%);
+}
+
+/* Ajustar margen para alejar las cajas de texto de la línea de tiempo */
+.milestone:nth-child(odd) .milestone-content {
+  margin-left: 14%;
+}
+
+.milestone:nth-child(even) .milestone-content {
+  margin-right: 14%;
+}
+
+/* Estilo de la estrella del milestone */
+.milestone::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('../assets/images/ochopuntasestrella.svg') no-repeat center;
+  background-size: cover;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.milestone-content a {
+  color: #1e90ff; /* Color elegante, azul */
+  text-decoration: none; /* Sin subrayado inicial */
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Transición suave del color */
+}
+
+.milestone-content a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #1e90ff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out; /* Subrayado animado */
+}
+
+.milestone-content a:hover {
+  color: #87cefa; /* Cambiar el color al pasar el mouse */
+}
+
+.milestone-content a:hover::after {
+  width: 100%; /* Subrayado animado al pasar el mouse */
+}
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+  .milestone {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .milestone.left {
+    flex-direction: row-reverse;
+  }
+
+  .milestone.right {
+    align-items: flex-start;
+  }
+
+  .milestone img {
+    max-width: 400px;
+  }
+
+  .milestone-content {
+    max-width: 45%;
+  }
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+  .milestone {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .milestone-content {
+    max-width: 100%;
+    padding-top: 80px;
+  }
+}
