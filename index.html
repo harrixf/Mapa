@@ -1,14 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Mapa/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://www.noticiasdegipuzkoa.eus/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapa de las estrellas del 72º Zinemaldia</title>
-    <script type="module" crossorigin src="/Mapa/assets/index-nUN9TiXE.js"></script>
+    
+    <!-- Meta SEO genéricas -->
+    <meta name="description" content="Explora el mapa de las estrellas que visitarán eel 72º Zinemaldia." />
+    <meta name="keywords" content="Zinemaldia, cine, festival, estrellas, películas, Javier Bardem, Monica Bellucci, Pamela Anderson, Pedro Almodóvar, Andrew Garfield, Costa-Gavras, Franco Nero, Lupita Nyong'o, Tilda Swinton, Johnny Depp, Cate Blanchett" />
+    
+    <!-- Open Graph sin URL estática -->
+    <meta property="og:title" content="Mapa de las estrellas del 72º Zinemaldia" />
+    <meta property="og:description" content="Explora el mapa de las estrellas que visitarán el 72º Zinemaldia." />
+    <meta property="og:image" content="/assets/images/mapa_estrellas_final.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mapa de las estrellas del 72º Zinemaldia" />
+    <meta name="twitter:description" content="Explora el mapa de las estrellas que visitarán el 72º Zinemaldia." />
+    <meta name="twitter:image" content="/assets/images/mapa_estrellas_final.jpg" />
+    <script type="module" crossorigin src="/Mapa/assets/index-BhNG3LBP.js"></script>
     <link rel="stylesheet" crossorigin href="/Mapa/assets/index-CUjnSUu4.css">
   </head>
   <body>
     <div id="root"></div>
+    
+    <script>
+      const currentUrl = window.location.href;
+
+      
+      const ogUrlMetaTag = document.createElement('meta');
+      ogUrlMetaTag.setAttribute('property', 'og:url');
+      ogUrlMetaTag.setAttribute('content', currentUrl);
+      document.head.appendChild(ogUrlMetaTag);
+      
+      const twitterUrlMetaTag = document.createElement('meta');
+      twitterUrlMetaTag.setAttribute('name', 'twitter:url');
+      twitterUrlMetaTag.setAttribute('content', currentUrl);
+      document.head.appendChild(twitterUrlMetaTag);
+    </script>
   </body>
 </html>
